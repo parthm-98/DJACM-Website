@@ -52,7 +52,7 @@ a img{
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
+  background: #ec407a !important;
   color: black !important;
 }
 
@@ -365,7 +365,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  /* background: url('images/devices.jpg') center top no-repeat; */
   background-size: cover;
   height: 400px;
 }
@@ -521,7 +521,7 @@ a img{
 
   .android-fab {
     display: none;
-  }
+}
 
   .android-wear-band-text {
     margin-left: 0;
@@ -537,4 +537,11 @@ a img{
     height: 120px;
     width: 120px;
     margin-left: 30px;
+}
+
+#about1 {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    width: %;
 }
