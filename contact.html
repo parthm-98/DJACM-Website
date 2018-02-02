@@ -1,188 +1,201 @@
 <!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-	<title>Sign Up Page - Material Kit by Creative Tim</title>
+  	<!-- CSS Files -->
+      <link href="bootstrap.min.css" rel="stylesheet" />
+      <link href="material-kit.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.min.css">
+      <link rel="stylesheet" href="mdl/material.min.css">
+      <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+      <link rel="stylesheet" href="mdl/bootstrap.min.css">
+      <link rel="stylesheet" href="mdl/mdb.min.css">
+      <link rel="stylesheet" href="styles.css">
+    <style>
+      .mdl-card > title-text {
+        font-weight: 450px;
+      }
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+      .mdl-card__supporting-text {
+        background-color: lightcyan;
+        width: auto;
+      }
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-
-	<!-- CSS Files -->
-    <link href="bootstrap.min.css" rel="stylesheet" />
-    <link href="material-kit.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.min.css">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
-    <link rel="stylesheet" href="mdl/bootstrap.min.css">
-    <link rel="stylesheet" href="mdl/mdb.min.css">
-    <link rel="stylesheet" href="styles.css">
-
-	<style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-	</style>
-
+      .portfolio-max-width {
+        max-width: 1300px;
+      }
+    </style>
 </head>
 
 <body class="signup-page">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-	<div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-	  <div class="mdl-layout__header-row">
-		  <!-- <div style="overflow-x: scroll;
-  overflow-y: hidden; display: inline-flex;">
+   <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+     <div class="mdl-layout__header-row">
+         <!-- <div style="overflow-x: scroll;
+ overflow-y: hidden; display: inline-flex;">
 
-		  </div> -->
-		  <!-- <span class="android-title mdl-layout-title">
-			<img class="android-logo-image" src="images/acm.png">
-		  </span> -->
-
-		  <span class="mdl-layout-title">
-			DJ-ACM
-		  </span>
-
-
-		<!-- Add spacer, to align navigation to the right in desktop -->
-		<div class="mdl-layout-spacer"></div>
-		<div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-		  <!-- <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-			<i class="material-icons">search</i>
-		  </label>
-		  <div class="mdl-textfield__expandable-holder">
-			<input class="mdl-textfield__input" type="text" id="search-field">
-		  </div> -->
-		</div>
-		<!-- Navigation -->
-		<div class="android-navigation-container">
-		  <nav class="android-navigation mdl-navigation">
-			<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
-			<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Team</a>
-			<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Events</a>
-			<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Projects</a>
-			<a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact Us</a>
-		  </nav>
-		</div>
-		<!-- <span class="android-mobile-title mdl-layout-title">
-		  <img class="android-logo-image" src="images/acm.png">
-		</span> -->
-		<!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-		  <i class="material-icons">more_vert</i>
-		</button>
-		<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-		  <li class="mdl-menu__item">5.0 Lollipop</li>
-		  <li class="mdl-menu__item">4.4 KitKat</li>
-		  <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-		  <li class="mdl-menu__item">Android History</li>
-		</ul> -->
-	  </div>
-</div>
-
-<div class="android-drawer mdl-layout__drawer">
-<span class="mdl-layout-title">
-<img class="android-logo-image" src="images/acm.png" id="acm_logo">
-</span>
-<nav class="mdl-navigation">
-<a class="mdl-navigation__link" href="index.html">Home</a>
-<a class="mdl-navigation__link" href="events.html">Events</a>
-<a class="mdl-navigation__link" href="teams.html">Team</a>
-<a class="mdl-navigation__link" href="projects.html">Projects</a>
-<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
-</nav>
-</div>
+         </div> -->
+         <!-- <span class="android-title mdl-layout-title">
+           <img class="android-logo-image" src="images/acm.png">
+         </span> -->
+         <span class="mdl-layout-title">
+           DJ-ACM
+         </span>
 
 
+       <!-- Add spacer, to align navigation to the right in desktop -->
+       <div class="mdl-layout-spacer"></div>
+       <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+         <!-- <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+           <i class="material-icons">search</i>
+         </label>
+         <div class="mdl-textfield__expandable-holder">
+           <input class="mdl-textfield__input" type="text" id="search-field">
+         </div> -->
+       </div>
+       <!-- Navigation -->
+        <div class="android-navigation-container">
+         <nav class="android-navigation mdl-navigation">
+           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Team</a>
+           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Events</a>
+           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Projects</a>
+           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact Us</a>
+         </nav>
+       </div> 
+       <!-- <span class="android-mobile-title mdl-layout-title">
+         <img class="android-logo-image" src="images/acm.png">
+       </span> -->
+       <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+         <i class="material-icons">more_vert</i>
+       </button>
+       <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+         <li class="mdl-menu__item">5.0 Lollipop</li>
+         <li class="mdl-menu__item">4.4 KitKat</li>
+         <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+         <li class="mdl-menu__item">Android History</li>
+       </ul> -->
+     </div>
+   </div>
 
+     <div class="android-drawer mdl-layout__drawer">
+     <span class="mdl-layout-title">
+       <img class="android-logo-image" src="images/acm.png"  id="acm_logo">
+     </span>
+     <nav class="mdl-navigation">
+       <a class="mdl-navigation__link" href="index.html">Home</a>
+       <a class="mdl-navigation__link" href="events.html">Events</a>
+       <a class="mdl-navigation__link" href="teams.html">Team</a>
+       <a class="mdl-navigation__link" href="projects.html">Projects</a>
+       <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+     </nav>
+     </div>
 
-    <div class="wrapper">
-		<div class="header header-filter" style="background-image: url('images/bg.jpg'); background-size: cover; background-position: top center;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-						<div class="card card-signup" style="margin-top: 200px;">
-							<form class="form" method="" action="">
-								<div class="header header-info text-center">
-									<h4>Sign Up</h4>
-									<div class="social-line">
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-facebook-square"></i>
-										</a>
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-google-plus"></i>
-										</a>
-									</div>
-								</div>
-								<div class="content">
+        <main class="mdl-layout__content">
+          <div class="wrapper">
+          <div class="header header-filter" style="background-image: url('images/bg.jpg'); background-size: cover; background-position: top center;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                  <div class="card card-signup" style="margin-top: 200px;">
+                    <form class="form" method="" action="">
+                      <div class="header header-info text-center">
+                        <h4>Sign Up</h4>
+                        <div class="social-line">
+                          <a href="#pablo" class="btn btn-simple btn-just-icon">
+                            <i class="fa fa-facebook-square"></i>
+                          </a>
+                          <a href="#pablo" class="btn btn-simple btn-just-icon">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                          <a href="#pablo" class="btn btn-simple btn-just-icon">
+                            <i class="fa fa-google-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="content">
 
-									<div class="input-group" style="margin-top: 45px;">
-										<span class="input-group-addon">
-											<i class="material-icons">face</i>
-										</span>
-										<input type="text" class="form-control" placeholder="First Name...">
-									</div>
+                        <div class="input-group" style="margin-top: 45px;">
+                          <span class="input-group-addon">
+                            <i class="material-icons">face</i>
+                          </span>
+                          <input type="text" class="form-control" placeholder="First Name...">
+                        </div>
 
-									<div class="input-group" style="margin-top: 15px;">
-										<span class="input-group-addon">
-											<i class="material-icons">email</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Email...">
-									</div>
+                        <div class="input-group" style="margin-top: 15px;">
+                          <span class="input-group-addon">
+                            <i class="material-icons">email</i>
+                          </span>
+                          <input type="text" class="form-control" placeholder="Email...">
+                        </div>
 
-									<div class="input-group" style="margin-top: 15px;">
-										<span class="input-group-addon">
-											<i class="material-icons">lock_outline</i>
-										</span>
-										<input type="password" placeholder="Password..." class="form-control" />
-									</div>
+                        <div class="input-group" style="margin-top: 15px;">
+                          <span class="input-group-addon">
+                            <i class="material-icons">lock_outline</i>
+                          </span>
+                          <input type="password" placeholder="Password..." class="form-control" />
+                        </div>
 
-									<!-- If you want to add a checkbox to this form, uncomment this code
+                        <!-- If you want to add a checkbox to this form, uncomment this code
 
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes" checked>
-											Subscribe to newsletter
-										</label>
-									</div> -->
-								</div>
-								<div class="footer text-center" style="margin-top: 65px;">
-									<a href="#pablo" class="btn btn-info btn-md">Get Started</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="optionsCheckboxes" checked>
+                            Subscribe to newsletter
+                          </label>
+                        </div> -->
+                      </div>
+                      <div class="footer text-center" style="margin-top: 65px;">
+                        <a href="#pablo" class="btn btn-info btn-md">Get Started</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
-		</div>
+          </div>
 
+          </div>
+
+        </main>
     </div>
-
-	<script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
-    <script defer src="mdl/material.min.js"></script>
-    <script src="mdl/bootstrap.min.js"></script>
-    <script src="mdl/jquery-3.2.1.min.js"></script>
-    <script src="mdl/mdb.min.js"></script>
-    <script src="mdl/popper.min.js"></script>
-    <script>window.mdc.autoInit();</script>
-    <script src="mdl/main.js"></script>
-
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
 </html>
