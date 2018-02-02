@@ -345,39 +345,53 @@
 
               </div>
 
-            <div class="mdl-layout__obfuscator"></div>
+              <footer>
+                  <div class="container">
+                      <div class="social">
+                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                      </div>
+                      <div class="rights">
+                          <p>Copyright &copy; 2014</p>
+                          <p>Template by <a href="http://www.scoopthemes.com" target="_blank">ScoopThemes</a></p>
+                      </div>
+                  </div>
+              </footer>
+
+            <!-- <div class="mdl-layout__obfuscator"></div> -->
           </div>
+
+
+
         </main>
-        <footer>
-            <div class="container">
-                <div class="social">
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                </div>
-                <div class="rights">
-                    <p>Copyright &copy; 2014</p>
-                    <p>Template by <a href="http://www.scoopthemes.com" target="_blank">ScoopThemes</a></p>
-                </div>
-            </div>
-        </footer>
+
+
     </div>
+    <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="mdl/bootstrap.min.js"></script>
+    <script src="mdl/jquery-3.2.1.min.js"></script>
+    <script src="mdl/mdb.min.js"></script>
+    <script src="mdl/popper.min.js"></script>
+    <script>window.mdc.autoInit();</script>
+    <script src="mdl/main.js"></script>
+    <!-- <script>
+      Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+        var link = el.querySelector('a');
+        if(!link) {
+          return;
+        }
+        var target = link.getAttribute('href');
+        if(!target) {
+          return;
+        }
+        el.addEventListener('click', function() {
+          location.href = target;
+        });
+      });
+    </script> -->
 </body>
 
-  <script>
-    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
-      var link = el.querySelector('a');
-      if(!link) {
-        return;
-      }
-      var target = link.getAttribute('href');
-      if(!target) {
-        return;
-      }
-      el.addEventListener('click', function() {
-        location.href = target;
-      });
-    });
-  </script>
+
 </html>
