@@ -16,40 +16,32 @@
   limitations under the License
 -->
 <html lang="en">
+  <head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A portfolio template that uses Material Design Lite.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>MDL-Static Website</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
-    <link rel="stylesheet" href="mdl/bootstrap.min.css">
-    <link rel="stylesheet" href="mdl/mdb.min.css">
-    <link rel="stylesheet" href="mdl/style.css">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="stylesteam.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.min.css">
+        <link rel="stylesheet" href="mdl/material.min.css">
+        <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+        <link rel="stylesheet" href="mdl/bootstrap.min.css">
+        <link rel="stylesheet" href="mdl/mdb.min.css">
+        <link rel="stylesheet" href="mdl/style.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="mdl/style.css">
+        <link rel="stylesheet" href="styles.css" />
+          <link rel="stylesheet" href="styles2.css" />
+        <link rel="stylesheet" href="styles1.css" />
+      <!--  <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> -->
     <style>
-      .mdl-card > title-text {
-        font-weight: 450px;
-      }
-
-      .mdl-card__supporting-text {
-        background-color: lightcyan;
-        width: auto;
-      }
-
-      .portfolio-max-width {
-        max-width: 1300px;
-      }
-
     #view-source {
       position: fixed;
       display: block;
@@ -59,339 +51,467 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+    .demo-blog .mdl-card{
+      display: block;
+
+    }
     </style>
-</head>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-<body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+            <!-- <div style="overflow-x: scroll;
+    overflow-y: hidden; display: inline-flex;">
 
-   <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-     <div class="mdl-layout__header-row">
-         <!-- <div style="overflow-x: scroll;
- overflow-y: hidden; display: inline-flex;">
-
-         </div> -->
-         <!-- <span class="android-title mdl-layout-title">
-           <img class="android-logo-image" src="images/acm.png">
-         </span> -->
-         <span class="mdl-layout-title">
-           DJ-ACM
-         </span>
-
-
-       <!-- Add spacer, to align navigation to the right in desktop -->
-       <div class="mdl-layout-spacer"></div>
-       <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-         <!-- <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-           <i class="material-icons">search</i>
-         </label>
-         <div class="mdl-textfield__expandable-holder">
-           <input class="mdl-textfield__input" type="text" id="search-field">
-         </div> -->
-       </div>
-       <!-- Navigation -->
-        <div class="android-navigation-container">
-         <nav class="android-navigation mdl-navigation">
-           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
-           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Team</a>
-           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Events</a>
-           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Projects</a>
-           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact Us</a>
-         </nav>
-       </div>
-       <!-- <span class="android-mobile-title mdl-layout-title">
-         <img class="android-logo-image" src="images/acm.png">
-       </span> -->
-       <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-         <i class="material-icons">more_vert</i>
-       </button>
-       <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-         <li class="mdl-menu__item">5.0 Lollipop</li>
-         <li class="mdl-menu__item">4.4 KitKat</li>
-         <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-         <li class="mdl-menu__item">Android History</li>
-       </ul> -->
-     </div>
-   </div>
-
-     <div class="android-drawer mdl-layout__drawer">
-     <span class="mdl-layout-title">
-       <img class="android-logo-image" src="images/acm.png"  id="acm_logo">
-     </span>
-     <nav class="mdl-navigation">
-       <a class="mdl-navigation__link" href="index.html">Home</a>
-       <a class="mdl-navigation__link" href="events.html">Events</a>
-       <a class="mdl-navigation__link" href="teams.html">Team</a>
-       <a class="mdl-navigation__link" href="projects.html">Projects</a>
-       <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
-     </nav>
-     </div>
-
-        <main class="mdl-layout__content">
-          <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-              <div class="demo-blog__posts mdl-grid mdl-cell--middle">
-                <div class="mdl-card amazing mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="align: center;">
-                  <div class="mdl-card__title mdl-color-text--grey-50" style="background-color: #000;">
-
-                  </div>
-                  <div class="mdl-card__supporting-text meta mdl-color-text--grey-600" style="height: 50px;background:#607D8B;">
-                    <div class="minilogo" style="background-color: #fff;"></div>
-                    <div style="color: #fff;">
-                      <strong>The Newist</strong>
-                      <span>2 days ago</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                  <div class="mdl-card__media mdl-card--border">
-                       <img class="article-image card-img-responsive" src=" images/sudhir.jpg" border="0" alt="">
-                  </div>
-                  <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                      <p style="color: #fff; padding: 10px;font-size: 1rem;margin-top: 10px;">Aditya Kapadia - (Vice-Chairperson PR)</p>
-                  </div>
-                 </div>
-                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                   <div class="mdl-card__media mdl-card--border">
-                        <img class="article-image card-img-responsive" src=" images/aruna.jpg" border="0" alt="">
-                   </div>
-                   <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                       <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Shrey Nahar - (Vice-Chairperson Admin)</p>
-                   </div>
-                 </div>
-                 <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                   <div class="mdl-card__media mdl-card--border">
-                        <img class="article-image card-img-responsive" src=" images/idk.jpg" border="0" alt="">
-                   </div>
-                   <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                       <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Prerak Shah - (Secretary)</p>
-                   </div>
-                 </div>
-
-                      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                          <div class="mdl-card__media mdl-card--border">
-                               <img class="article-image card-img-responsive" src=" images/1262.jpg" border="0" alt="">
-                          </div>
-                          <div class="mdl-card__supporting-text" style="height: 50px;background:#202020;">
-                              <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Rushabh Vinchhi - (Chairperson)</p>
-                          </div>
-                      </div>
-
-                      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                        <div class="mdl-card__media mdl-card--border">
-                             <img class="article-image card-img-responsive" src=" images/aneri.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-card__supporting-text" style="height: 50px;background:#202020;">
-                            <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Secretary)</p>
-                        </div>
-                      </div>
+            </div> -->
+            <!-- <span class="android-title mdl-layout-title">
+              <img class="android-logo-image" src="images/acm.png">
+            </span> -->
+            <span class="mdl-layout-title">
+              DJ-ACM
+            </span>
 
 
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <!-- <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div> -->
+          </div>
+          <!-- Navigation
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Team</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Events</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Projects</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact Us</a>
+            </nav>
+          </div>-->
+          <!-- <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/acm.png">
+          </span> -->
+          <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul> -->
+        </div>
+      </div>
 
-                      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                        <div class="mdl-card__media mdl-card--border">
-                             <img class="article-image card-img-responsive" src=" images/anushka.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                            <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Vice-Chairperson HR)</p>
-                        </div>
-                      </div>
+        <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/acm.png"  id="acm_logo">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="events.html">Events</a>
+          <a class="mdl-navigation__link" href="teams.html">Team</a>
+          <a class="mdl-navigation__link" href="projects.html">Projects</a>
+          <a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+        </nav>
+        </div>
+    <div class="container" style="margin-bottom:-100px;">
+      <div class="at-grid" data-column="3">
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="images/aruna.jpg"/></div>
+            <div class="at-user__name">Prof. Aruna Gawde</div>
+            <div class="at-user__title">ACM Co-ordinator</div>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="images/sheku.jpg"/></div>
+            <div class="at-user__name">Dr. Prof. Narendra Shekokar</div>
+            <div class="at-user__title">ACM Convenor</div>
+          </div>
+        </div>
+        <div class="at-column">
+          <div class="at-user">
+            <div class="at-user__avatar"><img src="images/sudhir.jpg"/></div>
+            <div class="at-user__name">Prof. Sudhir Bagul</div>
+            <div class="at-user__title">ACM Co-ordinator</div>
+          </div>
+        </div>
+      </div>
 
-                      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                        <div class="mdl-card__media mdl-card--border">
-                             <img class="article-image card-img-responsive" src=" images/karan.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                            <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Karan Shah - (Vice-Chairperson HR)</p>
-                        </div>
-                      </div>
-                      <!-- <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp mdl-color-text--white" style="background:url('images/r.jpg');">
-                          <div class="mdl-card__title mdl-card--expand">
-                              <h4 class="mdl-color-text--white">
-                                Upcoming event:<br>
-                                Jan 30, 2018<br>
-                                7-11am
-                              </h4>
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="text-align: left; margin-left: -10px;">
-                                Blockchain Seminar
-                              </a>
-                          </div>
-                      </div>
-                      <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp">
-                          <div class="mdl-card__title mdl-card--expand portfolio-blog-card-strip-bg mdl-color-text--white">
-                              <h2 class="mdl-card__title-text">Internship Fare</h2>
-                          </div>
-                          <div class="mdl-card__supporting-text">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                                View Updates
-                              </a>
-                          </div>
-                      </div>
-                      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp portfolio-blog-card-compact">
-                          <div class="mdl-card__media">
-                              <img class="article-image" src=" images/example-blog07.jpg" border="0" alt="">
-                          </div>
-                          <div class="mdl-card__title ">
-                              <h2 class="mdl-card__title-text">Industrial Visit</h2>
-                          </div>
-                          <div class="mdl-card__supporting-text">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                                View Updates
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                </div> -->
-                   <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                     <div class="mdl-card__media mdl-card--border">
-                          <img class="article-image card-img-responsive" src=" images/aditya.jpg" border="0" alt="">
-                     </div>
-                     <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                         <p style="color: #fff; padding: 10px;font-size: 1rem;margin-top: 10px;">Aditya Kapadia - (Vice-Chairperson PR)</p>
-                     </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/shrey.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Shrey Nahar - (Vice-Chairperson Admin)</p>
-                      </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/tanay.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Prerak Shah - (Secretary)</p>
-                      </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/anushka.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/karan.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Karan Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/anushka.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/karan.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Karan Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/anushka.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/karan.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Karan Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/anuj.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.5rem;margin-top: 10px;">Aneri Shah - (Vice-Chairperson HR)</p>
-                      </div>
-                    </div>
-
-                    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                      <div class="mdl-card__media mdl-card--border">
-                           <img class="article-image card-img-responsive" src=" images/soham.jpg" border="0" alt="">
-                      </div>
-                      <div class="mdl-card__supporting-text" style="height: 50px;background:#607D8B;">
-                          <p style="color: #fff; padding: 10px;font-size: 1.1rem;margin-top: 10px;">Soham Khedekar - (Vice-Chairperson Editorial)</p>
-                      </div>
-                    </div>
-
-              </div>
-
-              <footer>
-                  <div class="container">
-                      <div class="social">
-                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
-                          <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                      </div>
-                      <div class="rights">
-                          <p>Copyright &copy; 2014</p>
-                          <p>Template by <a href="http://www.scoopthemes.com" target="_blank">ScoopThemes</a></p>
-                      </div>
-                  </div>
-              </footer>
-
-            <!-- <div class="mdl-layout__obfuscator"></div> -->
+      <div class = "cotainer" style="margin-top: 100px;">
+        <div class="at-section">
+          <div class="at-section__title">The Team</div>
+        </div>
+        <div class="at-grid" data-column="3">
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/1262.jpg"/></div>
+              <div class="at-user__name">Rushabh Vinchhi</div>
+              <div class="at-user__title">Chairperson</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/aneri.jpg"/></div>
+              <div class="at-user__name">Aneri Shah</div>
+              <div class="at-user__title">Secretary</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/anushka.jpg"/></div>
+              <div class="at-user__name">Anushka Gangwal</div>
+              <div class="at-user__title">Vice-Chairperson (HR)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/karan.jpg"/></div>
+              <div class="at-user__name">Karan Shah</div>
+              <div class="at-user__title">Vice-Chairperson (HR)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/aditya.jpeg"/></div>
+              <div class="at-user__name">Aditya Kapadia</div>
+              <div class="at-user__title">Vice-Chairperson (PR)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/shrey.jpg"/></div>
+              <div class="at-user__name">Shrey Nahar</div>
+              <div class="at-user__title">Vice-Chairperson (Admin)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/prerak.jpg"/></div>
+              <div class="at-user__name">Prerak Shah</div>
+              <div class="at-user__title">Vice-Chairperson (Admin)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/tanay.jpg"/></div>
+              <div class="at-user__name">Tanay Karnik</div>
+              <div class="at-user__title">Vice-Chairperson (Finance)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/ayush.jpg"/></div>
+              <div class="at-user__name">Ayush Jain</div>
+              <div class="at-user__title">Vice-Chairperson (Finance)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/shyen.png"/></div>
+              <div class="at-user__name">Shyen Vakhariya</div>
+              <div class="at-user__title">Vice-Chairperson (Logisitcs)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/aman.png"/></div>
+              <div class="at-user__name">Aman Mehta</div>
+              <div class="at-user__title">Vice-Chairperson (Marketing)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/dhyey.jpg"/></div>
+              <div class="at-user__name">Dhyey Mehta</div>
+              <div class="at-user__title">Vice-Chairperson (Logisitics)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/adesh.jpg"/></div>
+              <div class="at-user__name">Adesh Shah</div>
+              <div class="at-user__title">Vice-Chairperson (Marketing)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/soham.jpg"/></div>
+              <div class="at-user__name">Soham Khedekar</div>
+              <div class="at-user__title">Vice-Chairperson (Editorial)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/anuj.jpg"/></div>
+              <div class="at-user__name">Anuj Jain</div>
+              <div class="at-user__title">Vice-Chairperson (Editorial)</div>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+                <li class="at-social__item"><a href="">
+                    <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z" fill-rule="evenodd"></path>
+                    </svg></a></li>
+              </ul>
+            </div>
           </div>
 
+        </div>
 
-
-        </main>
-
+      </div>
 
     </div>
-    <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="mdl/bootstrap.min.js"></script>
-    <script src="mdl/jquery-3.2.1.min.js"></script>
-    <script src="mdl/mdb.min.js"></script>
-    <script src="mdl/popper.min.js"></script>
-    <script>window.mdc.autoInit();</script>
-    <script src="mdl/main.js"></script>
-    <!-- <script>
-      Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
-        var link = el.querySelector('a');
-        if(!link) {
-          return;
-        }
-        var target = link.getAttribute('href');
-        if(!target) {
-          return;
-        }
-        el.addEventListener('click', function() {
-          location.href = target;
-        });
+    <footer style="margin-top:0px;padding:0px;">
+        <div class="container">
+            <div class="social">
+                <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+                <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+            </div>
+            <div class="rights">
+                <p>Copyright &copy; 2014</p>
+                <p>Template by <a href="http://www.scoopthemes.com" target="_blank">ScoopThemes</a></p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+  </body>
+
+
+  <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script defer src="mdl/material.min.js"></script>
+  <script src="mdl/bootstrap.min.js"></script>
+  <script src="mdl/jquery-3.2.1.min.js"></script>
+  <script src="mdl/mdb.min.js"></script>
+  <script src="mdl/popper.min.js"></script>
+  <script>window.mdc.autoInit();</script>
+  <script src="mdl/main.js"></script>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
       });
-    </script> -->
-</body>
-
-
+    });
+  </script>
 </html>
