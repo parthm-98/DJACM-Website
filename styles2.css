@@ -142,8 +142,8 @@
   text-align: center;
 }
 .at-user__avatar {
-  width: 98px;
-  height: 98px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
   margin: 0 auto 20px;
   overflow: hidden;
@@ -163,7 +163,7 @@
 .at-user__title {
   color: #6F808A;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.875rem;
+  font-size: 15px;
   line-height: 2.375rem;
 }
 .at-social {
