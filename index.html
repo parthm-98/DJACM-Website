@@ -20,7 +20,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="description" content="DJ-ACM &copy; 2018">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>DJSCOE-ACM</title>
 
@@ -141,7 +141,7 @@
           <div class="logo-font android-slogan">May the code be with you.</div>
 
 
-          <a href="#">
+          <a href="#about_us">
             <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
               <i class="material-icons" style="color: #ffffff;">expand_more</i>
             </button>
@@ -221,18 +221,19 @@
 
 
 
-        <div class="android-more-section">
+        <div class="android-more-section" id="about_us">
           <div class="android-section-title mdl-typography--display-1-color-contrast" style="font-weight: bold; font-size: 40px;">About Us</div>
           <div class="android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--12-col mdl-cell--3-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/about1.jpg">
+              <div class="mdl-card__media" id="slideshow">
+                 <img src="images/about1.jpg">
+                 <img src="images/adult-business-chair-380769.jpg">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text" style="font-weight: bold; font-size: 40px">DJ-ACM</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead" style="font-size: 20px;">ACM, the world's largest educational and scientific computing society, delivers resources that advance computing as a science and a profession. Since its inception in our college in 2007-2008, DJSCOE-ACM has established itself as a successful committee, not only in terms of the number of members who have become a part of the ACM family but also in terms of the activities and seminars/workshops that have been conducted. Don't let us convince you about our success. Let our three consecutive Best Student Chapter of the Year awards do the talking.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead" id="about_us_desc" style="font-size: 20px;">ACM, the world's largest educational and scientific computing society, delivers resources that advance computing as a science and a profession. Since its inception in our college in 2007-2008, DJSCOE-ACM has established itself as a successful committee, not only in terms of the number of members who have become a part of the ACM family but also in terms of the activities and seminars/workshops that have been conducted. Don't let us convince you about our success. Let our three consecutive Best Student Chapter of the Year awards do the talking.</span>
               </div>
               <!-- <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -367,6 +368,19 @@
     <script src="mdl/popper.min.js"></script>
     <script>window.mdc.autoInit();</script>
     <script src="mdl/main.js"></script>
+
+    <script>
+    $("#slideshow > img:gt(0)").hide();
+
+    setInterval(function() {
+      $('#slideshow > img:first')
+        .fadeOut(0)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    },  3000);
+    </script>
 
   </body>
 </html>
